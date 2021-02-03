@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import ButtonClick from "./components/Button/ButtonClick";
+import Input from "./components/Input/Input"; // import ALGO from 'arquivo
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Apos importar o componente, podemos utilizar como uma tag HTML */}
+      <Input name={"Thalita"} />
+      {/* Componentes REACT =  Tags HTML COM propiedades 
+
+          Todo componente react tem props.
+          Um input, do HTML, por exemplo, tem props padroes, como por exemplo
+          o placeholder.
+          <input placeholder="Digite algo..." ></input>
+
+          Como criamos um componente chamado <Input></Input>,
+          que nao tem props padrao, podemos DEFINIR essas props.
+          Nos podemos definir as props do nosso componente!!!
+
+          Para definir essas props, fazemos:
+          <Input nomeDaProp={'Valor da Prop'} />
+                  editavel     editavel
+          Podendo passar qualquer nome, e qualquer valor. */}
+
+      <ButtonClick />
+    </>
   );
 }
 
